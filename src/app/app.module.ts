@@ -8,9 +8,10 @@ import { HomeComponent } from './components/home/home.component';
 import { TestComponent } from './components/test/test.component';
 import { ListComponent } from './components/list/list.component';
 import { FormsModule } from '@angular/forms';
+import { ColorbandDirective } from './directives/colorband.directive';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, TestComponent, ListComponent],
+  declarations: [AppComponent, HomeComponent, TestComponent, ListComponent, ColorbandDirective],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,2 +1,10 @@
-<p *ngIf="productList[0]">{{ productList[0].name }}</p>
-<button (click)="onButtonClick()">Add 1</button>
+<div>
+  <input type="radio" name="colors" (click)="color = 'lightgreen'" />Green
+  <input type="radio" name="colors" (click)="color = 'yellow'" />Yellow
+  <input type="radio" name="colors" (click)="color = 'cyan'" />Cyan
+</div>
+<p [appColorband]="color">Highlight me!</p>
+
+<p [style.color]="color || 'red'">Test</p>
+
+<button (click)="onButtonClick()">Click</button>
