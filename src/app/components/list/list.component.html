@@ -1,0 +1,8 @@
+<hr />
+<div>
+  <input [(ngModel)]="newProductName" />
+  <button (click)="onAddProductClick()">Add Product</button>
+</div>
+<ul class="product" *ngFor="let productItem of productList">
+  <li (click)="onItemClick(productItem)">{{ productItem.name }}</li>
+</ul>
